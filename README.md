@@ -15,16 +15,18 @@ You can obtain an endpoint for HTTP request from **Hookbin**[https://hookbin.com
 
 2. Get the form element using Javascript DOM manipulation method and then parse that data into an object as follows:
 
-`const formData = new FormData(form)
-const serialisedData = Object.fromEntries(formData)`
+```
+const formData = new FormData(form)
+const serialisedData = Object.fromEntries(formData)
+```
 
 3. Now use Fetch Api as follows for the post method:
 
 ```
 fetch(URL, {
-		method: 'POST',
-		body: JSON.stringify(serialisedData),
-		headers: {
+    method: 'POST',
+	body: JSON.stringify(serialisedData),
+	headers: {
 			'Content-Type': 'application/json'
 		}
 ```
