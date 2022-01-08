@@ -20,10 +20,12 @@ const serialisedData = Object.fromEntries(formData)`
 
 3. Now use Fetch Api as follows for the post method:
 
-`fetch(URL, {
+```
+fetch(URL, {
 		method: 'POST',
 		body: JSON.stringify(serialisedData),
 		headers: {
 			'Content-Type': 'application/json'
-		}`
+		}
+```
 
